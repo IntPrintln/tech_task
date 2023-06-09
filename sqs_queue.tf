@@ -2,7 +2,7 @@ provider "aws" {
   region = "us-east-1"
 }
 
-resource "aws_sqs_queue" "example" {
+resource "aws_sqs_queue" {
   name                      = "tech_task_SQSqueue"
   delay_seconds             = 60
   max_message_size          = 262144
