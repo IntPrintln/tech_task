@@ -10,7 +10,7 @@ resource "aws_sqs_queue" {
   receive_wait_time_seconds = 10
   visibility_timeout_seconds = 300
   tags = {
-    Environment = "production"
+    Environment = "sqs_techtask"
   }
 }
 
