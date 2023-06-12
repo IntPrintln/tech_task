@@ -2,7 +2,7 @@ import boto3
 
 def read_messages():
     # Connect to SQS
-    sqs = boto3.resource('sqs', region_name='your_region_name')
+    sqs = boto3.resource('sqs', region_name='us-east-1')
     queue_url = 'your_queue_url'
     
     # Retrieve messages
